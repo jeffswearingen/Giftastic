@@ -4,9 +4,22 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Giftastic</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	</head>
 	<body>
-		<script>
-		</script>
+		<div class="selectorButtons"></div>
+		<div class="inputSelector">
+			<form id="picture-form">
+    		<label for="picture-input">Search for GIFS</label>
+    		<input type="text" id="picture-input"><br>
+        <!-- Button triggers new movie to be added -->
+		    <input id="addPicture" type="submit" value="Search for GIFs">
+		  </form>
+
+		</div>
+		<div class="pictures"></div>
+		<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+		<script src="assets/javascript/app.js"></script>
 	</body>
 </html>
