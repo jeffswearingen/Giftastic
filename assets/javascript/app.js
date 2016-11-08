@@ -47,6 +47,7 @@ $(document).ready(function() {
 		console.log($("input#picture-input").val());
 
 		var inputPicture = $("input#picture-input").val().trim();
+		$("input#picture-input").val('');
 		arrayOfButtons.push(inputPicture);
 
 		//if (arrayOfButtons.indexOf(inputPicture) !== -1) {
