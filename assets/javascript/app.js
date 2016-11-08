@@ -1,3 +1,6 @@
+$(document).ready(function() {
+
+
 var arrayOfButtons = ["kirk", "spock", "sulu", "uhura", "scotty", "klingon", "vulcan", "picard", "riker", "enterprise"];
 var apiKey = "dc6zaTOxFJmzC";
 
@@ -42,17 +45,12 @@ function renderButtons() {
 //		console.log("exit");
 	});
 
-	$('.movable').on('click', function() {
-		console.log('movable call');
-//		$(this).attr('src', moving).addClass('freezable').removeClass('movable');
-	});
+	
 
 //	return false;
 }
 
-$(document).ready(function() {
 	renderButtons();
-
 
 	$('#addPicture').on('click', function() {
 		console.log($("input#picture-input").val());
@@ -61,12 +59,15 @@ $(document).ready(function() {
 		$("input#picture-input").val('');
 		arrayOfButtons.push(inputPicture);
 
-		//if (arrayOfButtons.indexOf(inputPicture) !== -1) {
-		//	arrayOfButtons.push(inputPicture);
-		//}
 		renderButtons();
 		return false;
 	});
+
+			$('img').on('click', function() {
+		console.log('movable call');
+//		$(this).attr('src', moving).addClass('freezable').removeClass('movable');
+	});
+
 
 	
 })
