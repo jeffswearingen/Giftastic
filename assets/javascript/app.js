@@ -49,6 +49,20 @@ function renderButtons() {
 
 //	return false;
 }
+	$('.pictures').on('click', 'img', function() {
+		console.log('image clicked');
+		if ($(this).hasClass('movable')) {
+			console.log('movable');
+			$(this).toggleClass('movable');
+			console.log($(this));
+			$(this).attr('src', $(this).data('still'));
+		} else {
+			console.log('still');
+			$(this).attr('src', $(this).data('moving'));
+			$(this).toggleClass('movable');
+		}
+		//		$(this).attr('src', moving).addClass('freezable').removeClass('movable');
+	});
 
 	renderButtons();
 
