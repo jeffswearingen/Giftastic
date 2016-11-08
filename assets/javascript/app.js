@@ -63,9 +63,9 @@ function renderButtons() {
 		return false;
 	});
 
-			$('img').on('click', function() {
-		console.log('movable call');
-//		$(this).attr('src', moving).addClass('freezable').removeClass('movable');
+	$('img').on('click', function() {
+		console.log('image clicked');
+		//		$(this).attr('src', moving).addClass('freezable').removeClass('movable');
 	});
 
 
