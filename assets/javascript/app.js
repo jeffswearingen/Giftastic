@@ -34,14 +34,16 @@ $(document).ready(function() {
 		var query = "http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&r=pg&limit=5"   
   	query += "&q=" + $(this).text();
 	  console.log(query);
-	  $.ajax( {
+	  $.ajax({
 	  	url: query,
-	  	method: 'GET' }
-	  	.done(function(response) {
-	  		
-	  	})
-	  })
+	  	method: 'GET', 
+	  }).done(function(response) {
+	  		console.log(response)
+		}).fail(function(err) {
+			throw err;
+		});
+		console.log("exit");
 	});
-});
+})
 
 
