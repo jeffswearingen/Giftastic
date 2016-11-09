@@ -55,10 +55,11 @@ function renderButtons() {
 			console.log('movable');
 			$(this).toggleClass('movable');
 			console.log($(this));
-			$(this).attr('src', $(this).data('still'));
+			console.log($(this).attr('still'));
+			$(this).attr('src', $(this).attr('still'));
 		} else {
 			console.log('still');
-			$(this).attr('src', $(this).data('moving'));
+			$(this).attr('src', $(this).attr('moving'));
 			$(this).toggleClass('movable');
 		}
 		//		$(this).attr('src', moving).addClass('freezable').removeClass('movable');
