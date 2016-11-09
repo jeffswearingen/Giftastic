@@ -72,8 +72,9 @@ function renderButtons() {
 
 		var inputPicture = $("input#picture-input").val().trim();
 		$("input#picture-input").val('');
-		arrayOfButtons.push(inputPicture);
-
+		if (inputPicture != '') {
+			arrayOfButtons.push(inputPicture);
+		}
 		renderButtons();
 		return false;
 	});
