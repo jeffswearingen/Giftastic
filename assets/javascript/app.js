@@ -14,6 +14,7 @@ function renderButtons() {
 		$(".selectorButtons").append(buttonNew);
 	}
 	$('.clickable').on('click', function() {
+		$('.pictures').html('');
 		var query = "http://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&r=pg&limit=5"   
   	query += "&q=" + $(this).text();
 //	  console.log(query);
